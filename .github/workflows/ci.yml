@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Install & Build
+    runs-on: ubuntu-latest
+
+    # NOTE: These are non-secret, clearly-fake placeholder values used ONLY so that
+    # `next build` can pre-render pages in CI. They are NOT real credentials.
+    # Real values must be configured in your hosting provider (e.g. Vercel) / GitHub Secrets.
+    env:
+      NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: pk_test_ZXhhbXBsZS5jbGVyay5hY2NvdW50cy5kZXYk
+      CLERK_SECRET_KEY: sk_test_ci_placeholder_not_a_real_secret_0000
+      MONGO_URI: mongodb://127.0.0.1:27017/intervuai_ci
+      NEXT_PUBLIC_GEMINI_API_KEY: ci_placeholder
+      NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT: "5"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
