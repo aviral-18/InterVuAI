@@ -1,4 +1,4 @@
-# InterVuAI 🎙️🤖
+# InterVuAI 
 
 > An AI-powered mock interview platform that generates role-specific interview questions, records your spoken answers, and returns instant AI feedback and scoring.
 
@@ -12,7 +12,7 @@
 
 ---
 
-## ✨ Overview
+##  Overview
 
 **InterVuAI** helps you prepare for job interviews by simulating a real interview
 experience. You describe the role, tech stack, and years of experience; the app uses
@@ -21,17 +21,17 @@ webcam and microphone, and the platform transcribes your responses and produces
 AI-generated feedback, a rating, and suggested improvements — all saved to your
 account so you can track your progress over time.
 
-## 🚀 Features
+##  Features
 
-- 🔐 **Authentication** — email/social sign-in powered by [Clerk](https://clerk.com/)
-- 🧠 **AI question generation** — role/stack/experience-aware questions via Google Gemini
-- 🎥 **Webcam + speech-to-text answering** — record spoken answers in the browser
-- 📝 **Instant AI feedback** — per-question rating, feedback, and model answers
-- 📊 **Interview history** — revisit past interviews and feedback from your dashboard
-- 💳 **Pricing / upgrade pages** — plan presentation scaffold
-- 🎨 **Modern UI** — Tailwind CSS, Radix UI, shadcn/ui components, and Magic UI animations
+-  **Authentication** — email/social sign-in powered by [Clerk](https://clerk.com/)
+-  **AI question generation** — role/stack/experience-aware questions via Google Gemini
+-  **Webcam + speech-to-text answering** — record spoken answers in the browser
+-  **Instant AI feedback** — per-question rating, feedback, and model answers
+-  **Interview history** — revisit past interviews and feedback from your dashboard
+-  **Pricing / upgrade pages** — plan presentation scaffold
+-  **Modern UI** — Tailwind CSS, Radix UI, shadcn/ui components, and Magic UI animations
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer          | Technology                                              |
 | -------------- | ------------------------------------------------------- |
